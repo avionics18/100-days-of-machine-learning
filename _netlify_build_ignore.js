@@ -2,37 +2,45 @@ const { execSync } = require("child_process");
 
 module.exports = () => {
     try {
-        // Get the list of changed files between current and previous commit
         const commitRef = process.env.COMMIT_REF;
         const cachedCommitRef = process.env.CACHED_COMMIT_REF;
 
-        if (!commitRef || !cachedCommitRef) {
+        console.log("COMMIT_REF:", commitRef);
+        console.log("CACHED_COMMIT_REF:", cachedCommitRef);
+
+        // Fallback to always build if refs are missing
+        if (!commitRef || !cachedCommitRef || commitRef === cachedCommitRef) {
             console.log(
-                "Missing COMMIT_REF or CACHED_COMMIT_REF. Proceeding with build."
+                "Missing or identical commit refs. Proceeding with build."
             );
-            return false; // Run the build just in case
+            return false;
         }
 
-        const diff = execSync(
-            `git diff --name-only ${cachedCommitRef} ${commitRef}`
+        // Get the list of changed files
+        const diffOutput = execSync(
+            `git diff --name-only ${cachedCommitRef} ${commitRef}`,
+            {
+                stdio: ["ignore", "pipe", "ignore"],
+            }
         ).toString();
-        const changedFiles = diff.split("\n").filter(Boolean);
 
+        const changedFiles = diffOutput.split("\n").filter(Boolean);
+        console.log("Changed files:", changedFiles);
+
+        // Check if any file is inside the notes/ folder
         const notesChanged = changedFiles.some((file) =>
             file.startsWith("notes/")
         );
 
         if (notesChanged) {
-            console.log(
-                "Changes detected in 'notes/' folder. Proceeding with build."
-            );
-            return false; // Run the build
+            console.log("Changes detected in 'notes/'. Proceeding with build.");
+            return false; // do NOT ignore build
         } else {
-            console.log("No changes in 'notes/' folder. Skipping build.");
-            return true; // Skip the build
+            console.log("No changes in 'notes/'. Skipping build.");
+            return true; // ignore the build
         }
     } catch (error) {
-        console.error("Error checking changed files:", error);
-        return false; // On error, build anyway
+        console.error("Error during ignore script:", error);
+        return false; // fallback: run the build
     }
 };
