@@ -1,0 +1,24 @@
+{
+	"name": "100-days-of-machine-learning",
+	"version": "1.0.0",
+	"description": "Notes &amp; Codes for 100 Days of ML by CampusX",
+	"main": "md-to-html.js",
+	"scripts": {
+		"build": "node md-to-html.js notes dist \"#100Days_of_ML\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/avionics18/100-days-of-machine-learning.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/avionics18/100-days-of-machine-learning/issues"
+	},
+	"homepage": "https://github.com/avionics18/100-days-of-machine-learning#readme",
+	"dependencies": {
+		"marked": "^16.0.0"
+	}
+}
