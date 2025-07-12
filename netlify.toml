@@ -1,0 +1,6 @@
+[build]
+    command = "node md-to-html.js"
+    publish = "dist"
+
+[[plugins]]
+    package = "@netlify/plugin-ignore"
