@@ -9,7 +9,7 @@
 
 ## Introduction
 
-**AI** stands for **Artificial Intelligence**, which includes _Pattern Recognition_, _Emotional Intelligence_, _Creativity & Imagination_. And Right now whatever we're seeing i.e. machine learning is just **pattern recognition**.
+**AI** stands for **Artificial Intelligence**, which includes _Pattern Recognition_, _Emotional Intelligence_, _Creativity & Imagination_. And Right now whatever we're seeing is machine learning which is **pattern recognition**.
 
 ![L02_01](imgs/L02_01.png)
 
@@ -25,7 +25,7 @@ Now the next question - if machine learning is able to solve the problem then wh
 
 So, lets discuss `Deep Learning` in two phases - What and Why.
 
-Deep Learning is essentially machine learning only - you input the data, train the model and then bring new data and do the prediction, same thing. The only difference is the algorithms used in deep learning are a bit different (inspired by biology - neurons). So, deep learning is basically a mathematical model, it is just that the core unit is built using perceptron which is inspired from biological neuron. And don't get it wrong that it works like our brain, because the way that our brain works is way complex.
+Deep Learning is essentially machine learning only - you input the data, train the model and then bring new data and do the prediction, same thing. The only difference is the algorithms used in deep learning are a bit different (inspired by biology - neurons). So, deep learning is basically a mathematical model, it is just that the core unit is built using perceptron which is inspired from biological neuron. And don't get it wrong that it works exactly like our brain, because the way that our brain works is way complex.
 
 Now the question - Why is Deep Learning the buzz word! The reason is that it solves certain problems better than machine learning.
 
@@ -42,8 +42,8 @@ However, in traditional machine learning, adding more layers or complexity to a 
 
 ![L02_04](imgs/L02_04.png)
 
-Therefore, deep learning is heavily being used in image classification tasks, text related task, GANs (Generative Adversarial Network).
+Therefore, deep learning is heavily being used in image classification tasks, text related tasks, GANs (Generative Adversarial Network).
 
-Then you may ask if deep learning is so much better then why to use machine learning. It's because you don't use a sword where you just need to tighten nuts and bolts, a screw-driver can do the perfect job. And guess what 90% of the world's data is small data, companies like Meta, instagram, Youtube - their's data is massive data. But when start working in industries like banking companies, sports analytics companies etc don't have massive data. And Machine Learning can easily give you better results with less resouce consumption.
+Then you may ask - If deep learning is so much better then why to use machine learning. It's because you don't use a sword where you just need to tighten nuts and bolts, a screw-driver can do the perfect job. And guess what 90% of the world's data is small data, companies like Meta, Instagram, Youtube - their's data is massive data. But when you start working in industries like banking companies, sports analytics companies etc. they don't have massive data. And Machine Learning can easily give you better results with less resources.
 
 If at this point you're planning to build AI, Machine Learning and Deep Learning is the way to go.
