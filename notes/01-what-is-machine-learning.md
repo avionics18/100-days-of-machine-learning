@@ -16,7 +16,7 @@
 
 ## What is Machine Learning?
 
-> Machine Learning is a field of computer science that uses **statistical techniques** to give computer systems the ability to _LEARN_ with data, without being **explicitly programmed**.
+> Machine Learning is a field of computer science that uses **statistical techniques** to gives computer systems the ability to _LEARN_ from data, without being **explicitly programmed**.
 
 ![L01_01.png](imgs/L01_01.png)
 
@@ -32,6 +32,6 @@ ML has boomed recently after 2010. It had started way back, had all the algorith
 
 Thus, after 2010, the evolution of Internet and Smartphones aided in the boom of machine learning as it solved both the problems. We're generating data in an incredibly astonishing rate - the moment you wake up till you sleep and there are billions of people using the internet, just imagine 🤯.
 
-And coming to the hardware, now as you can see we have 12GB RAM phones in our pocket even GPUs too. For scientists at that time, access to GPU was a big thing.
+And coming to the hardware, now as you can see we have 12GB RAM phones in our pocket even GPUs too. For scientists at that time, access to GPU and being able to program it to use its full potential was a challenge.
 
 And from now on the field of machine learning is projected to experience significant growth in the coming years.

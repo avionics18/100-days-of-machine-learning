@@ -19,7 +19,7 @@ Initially we had `Symbolic AI` (Knowledge Systems) --> then came `Expert Systems
 
 ![L02_02](imgs/L02_02.png)
 
-Next came `Machine Learning`, which was able to solve fuzzy logic based problems, because it learns from the patterns in the data. So, rather than writing rules for everything, just provide data and rules will be generated automatically. This has changed the industry.
+Next came `Machine Learning`, which was able to solve fuzzy logic based problems, because it learns from the patterns in the data. So, rather than writing rules for everything, just provide data and rules will be generated automatically. This has completely changed the industry.
 
 Now the next question - if machine learning is able to solve the problem then what is the need of deep learning.
 
