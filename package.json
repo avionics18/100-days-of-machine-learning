@@ -1,25 +1,27 @@
 {
-	"name": "100-days-of-machine-learning",
-	"version": "1.0.0",
-	"description": "Notes &amp; Codes for 100 Days of ML by CampusX",
-	"main": "md-to-html.js",
-	"scripts": {
-		"build": "node md-to-html.js notes dist \"#100Days_of_ML\" true"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/avionics18/100-days-of-machine-learning.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"type": "module",
-	"bugs": {
-		"url": "https://github.com/avionics18/100-days-of-machine-learning/issues"
-	},
-	"homepage": "https://github.com/avionics18/100-days-of-machine-learning#readme",
-	"dependencies": {
-		"marked": "^16.1.2",
-		"marked-gfm-heading-id": "^4.1.2"
-	}
+    "name": "100-days-of-machine-learning",
+    "version": "1.0.0",
+    "description": "Notes &amp; Codes for 100 Days of ML by CampusX",
+    "main": "md-to-html.js",
+    "scripts": {
+        "build": "node md-to-html.js notes dist \"#100Days_of_ML\" true",
+        "serve": "browser-sync dist -w",
+        "clean": "rm -rf dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/avionics18/100-days-of-machine-learning.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "module",
+    "bugs": {
+        "url": "https://github.com/avionics18/100-days-of-machine-learning/issues"
+    },
+    "homepage": "https://github.com/avionics18/100-days-of-machine-learning#readme",
+    "dependencies": {
+        "marked": "^16.1.2",
+        "marked-gfm-heading-id": "^4.1.2"
+    }
 }
