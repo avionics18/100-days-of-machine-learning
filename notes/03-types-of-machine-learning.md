@@ -120,4 +120,4 @@ Based on the amount of supervision, ML algorithms can be divided into four main 
         -   Teaching a system to play Chess or Go. DeepMind's AlphaGo famously defeated the world champion in Go, a highly complex game, demonstrating the power of reinforcement learning.
         -   The agent learns optimal moves by playing against itself or humans, getting rewards for winning and penalties for losing.
 
-**Key Takeaway**: Understanding these different types of machine learning is fundamental for solving real-world problems effectively. Each type is suited for different kinds of data and problem statements.
+> **Key Takeaway**: Understanding these different types of machine learning is fundamental for solving real-world problems effectively. Each type is suited for different kinds of data and problem statements.
